@@ -1,11 +1,14 @@
-import { Map } from './components/Map';
-import React from 'react';
+import { Map } from "./components/Map";
+import React from "react";
+import reacticon from "./assets/reacticon.png";
+import LeafLetLogo from "./assets/leafletlogo.png";
+
 function App() {
   return (
     <div className="App">
       <header className="app-nav">
-        <img src="/leaflet-logo.png" alt="Leaflet logo" className="logo-mid" />
-        <img src="/react-logo.png" alt="React logo" className="logo-small" />
+        <img src={LeafLetLogo} alt="Leaflet logo" className="logo-mid" />
+        <img src={reacticon} alt="React logo" className="logo-small" />
       </header>
       <Map />
     </div>
